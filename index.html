@@ -5,29 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Arkans Co. | Interface</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Design Premium Arkans */
+        body { background-color: #020617; }
+        .arkans-card { 
+            border: 1px solid rgba(59, 130, 246, 0.3); 
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-white font-sans min-h-screen flex flex-col items-center p-4 md:p-8">
+<body class="text-white font-sans min-h-screen flex flex-col items-center justify-center p-4">
     
-    <header class="mb-8 text-center">
-        <h1 class="text-3xl md:text-4xl font-bold text-blue-400 font-mono tracking-tighter uppercase">The Arkans Co.</h1>
-        <p class="text-slate-400 font-mono text-xs tracking-widest mt-2 uppercase">Sistema de Inteligência Ativo</p>
-    </header>
+    <div class="text-center mb-6">
+        <h1 class="text-4xl font-extrabold text-blue-500 tracking-tighter uppercase italic">The Arkans Co.</h1>
+        <p class="text-blue-300/40 font-mono text-[10px] tracking-[0.4em] uppercase">Sistema de Inteligência Operacional</p>
+    </div>
 
-    <div class="w-full max-w-4xl bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden" style="height: 70vh; min-height: 500px;">
+    <div class="w-full max-w-lg arkans-card rounded-[2rem] overflow-hidden bg-slate-900/50 backdrop-blur-2xl" style="height: 80vh; min-height: 550px;">
         <typebot-standard style="width: 100%; height: 100%;"></typebot-standard>
     </div>
 
-    <footer class="mt-8 text-slate-500 text-xs font-mono text-center">
-        &copy; 2026 THE ARKANS CO. - ARK SYSTEMS
-    </footer>
-
     <script type="module">
-      import Typebot from 'https://typebot.co/ark-the-arkans-co-ng73b53'
+      import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
 
       Typebot.initStandard({
-        typebot: "tjabuunqqyo84m1qwng73b53",
+        typebot: "ark-the-arkans-co-ng73b53",
       });
     </script>
+
+    <footer class="mt-6 text-slate-700 text-[9px] font-mono uppercase tracking-widest">
+        &copy; 2026 THE ARKANS CO. - PROMPT ENGINEERING
+    </footer>
 
 </body>
 </html>
